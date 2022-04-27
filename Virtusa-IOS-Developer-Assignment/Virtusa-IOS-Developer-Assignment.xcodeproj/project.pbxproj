@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A07A29B2806978400C66CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A29A2806978400C66CA6 /* AppDelegate.swift */; };
+		4A07A29F2806978400C66CA6 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A29E2806978400C66CA6 /* PeopleViewController.swift */; };
+		4A07A2A22806978400C66CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A07A2A02806978400C66CA6 /* Main.storyboard */; };
+		4A07A2A42806978600C66CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A07A2A32806978600C66CA6 /* Assets.xcassets */; };
+		4A07A2A72806978600C66CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A07A2A52806978600C66CA6 /* LaunchScreen.storyboard */; };
+		4A07A2B22806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2B12806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift */; };
+		4A07A2BD2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2BC2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift */; };
+		4A07A2D828069A3300C66CA6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2D728069A3300C66CA6 /* Router.swift */; };
+		4A07A2ED2806A00100C66CA6 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2EC2806A00100C66CA6 /* AuthError.swift */; };
+		4A07A2FE2806B03000C66CA6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A07A2F12806A74900C66CA6 /* Settings.bundle */; };
+		4A07A3042806B2C600C66CA6 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3032806B2C600C66CA6 /* People.swift */; };
+		4A07A3092806BBA200C66CA6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3082806BBA200C66CA6 /* Room.swift */; };
+		4A07A3132806C30900C66CA6 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3122806C30900C66CA6 /* Observer.swift */; };
+		4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */; };
+		4A0F6CFF280701E20059445E /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F6CFE280701E20059445E /* RoomsViewController.swift */; };
+		4A1821EF280C93D200C37134 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1821EE280C93D200C37134 /* HTTPMethod.swift */; };
+		4AB4081928184A2300B7B0F5 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */; };
+		4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */; };
+		4AB4082728186D2800B7B0F5 /* TableViewReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */; };
+		4AE47D8D2807FBA20042B4AA /* NeworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE47D8C2807FBA20042B4AA /* NeworkManager.swift */; };
+		4AE47D922807FCD10042B4AA /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE47D912807FCD10042B4AA /* APICommunicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A07A2AE2806978700C66CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A07A28F2806978400C66CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A07A2962806978400C66CA6;
+			remoteInfo = "Virtusa-IOS-Developer-Assignment";
+		};
+		4A07A2B92806978700C66CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A07A28F2806978400C66CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A07A2962806978400C66CA6;
+			remoteInfo = "Virtusa-IOS-Developer-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A07A2972806978400C66CA6 /* Virtusa-IOS-Developer-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtusa-IOS-Developer-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A07A29A2806978400C66CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A07A29E2806978400C66CA6 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		4A07A2A12806978400C66CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A07A2A32806978600C66CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A07A2A62806978600C66CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A07A2A82806978600C66CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A07A2AD2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtusa-IOS-Developer-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A07A2B12806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtusa_IOS_Developer_AssignmentTests.swift; sourceTree = "<group>"; };
+		4A07A2B32806978700C66CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A07A2B82806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtusa-IOS-Developer-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A07A2BC2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtusa_IOS_Developer_AssignmentUITests.swift; sourceTree = "<group>"; };
+		4A07A2BE2806978700C66CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A07A2D728069A3300C66CA6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4A07A2EC2806A00100C66CA6 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		4A07A2F12806A74900C66CA6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4A07A3032806B2C600C66CA6 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		4A07A3082806BBA200C66CA6 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		4A07A3122806C30900C66CA6 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		4A0F6CFE280701E20059445E /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		4A1821EE280C93D200C37134 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReusableProtocol.swift; sourceTree = "<group>"; };
+		4AE47D8C2807FBA20042B4AA /* NeworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeworkManager.swift; sourceTree = "<group>"; };
+		4AE47D912807FCD10042B4AA /* APICommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A07A2942806978400C66CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2AA2806978700C66CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2B52806978700C66CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A07A28E2806978400C66CA6 = {
+			isa = PBXGroup;
+			children = (
+				4A07A2992806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */,
+				4A07A2B02806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests */,
+				4A07A2BB2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests */,
+				4A07A2982806978400C66CA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A07A2982806978400C66CA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A2972806978400C66CA6 /* Virtusa-IOS-Developer-Assignment.app */,
+				4A07A2AD2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests.xctest */,
+				4A07A2B82806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A07A2992806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				4AB4082528186CFA00B7B0F5 /* Extesions */,
+				4AB40817281849E300B7B0F5 /* CustomCell */,
+				4A07A2EB28069FE700C66CA6 /* ErrorHandler */,
+				4AE47D8B2807FB890042B4AA /* Network */,
+				4A07A2F12806A74900C66CA6 /* Settings.bundle */,
+				4A07A3112806C2EE00C66CA6 /* Observer */,
+				4A07A3102806C2C100C66CA6 /* ViewModels */,
+				4A07A3022806B28A00C66CA6 /* DataModels */,
+				4A07A2D628069A1200C66CA6 /* Router */,
+				4A07A29A2806978400C66CA6 /* AppDelegate.swift */,
+				4A07A29E2806978400C66CA6 /* PeopleViewController.swift */,
+				4A0F6CFE280701E20059445E /* RoomsViewController.swift */,
+				4A07A2A02806978400C66CA6 /* Main.storyboard */,
+				4A07A2A32806978600C66CA6 /* Assets.xcassets */,
+				4A07A2A52806978600C66CA6 /* LaunchScreen.storyboard */,
+				4A07A2A82806978600C66CA6 /* Info.plist */,
+			);
+			path = "Virtusa-IOS-Developer-Assignment";
+			sourceTree = "<group>";
+		};
+		4A07A2B02806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A2B12806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift */,
+				4A07A2B32806978700C66CA6 /* Info.plist */,
+			);
+			path = "Virtusa-IOS-Developer-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		4A07A2BB2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A2BC2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift */,
+				4A07A2BE2806978700C66CA6 /* Info.plist */,
+			);
+			path = "Virtusa-IOS-Developer-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		4A07A2D628069A1200C66CA6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4A1821EE280C93D200C37134 /* HTTPMethod.swift */,
+				4A07A2D728069A3300C66CA6 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4A07A2EB28069FE700C66CA6 /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A2EC2806A00100C66CA6 /* AuthError.swift */,
+			);
+			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
+		4A07A3022806B28A00C66CA6 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A3032806B2C600C66CA6 /* People.swift */,
+				4A07A3082806BBA200C66CA6 /* Room.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		4A07A3102806C2C100C66CA6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4A07A3112806C2EE00C66CA6 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				4A07A3122806C30900C66CA6 /* Observer.swift */,
+				4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		4AB40817281849E300B7B0F5 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		4AB4082528186CFA00B7B0F5 /* Extesions */ = {
+			isa = PBXGroup;
+			children = (
+				4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */,
+			);
+			path = Extesions;
+			sourceTree = "<group>";
+		};
+		4AE47D8B2807FB890042B4AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4AE47D8C2807FBA20042B4AA /* NeworkManager.swift */,
+				4AE47D912807FCD10042B4AA /* APICommunicator.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A07A2962806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A07A2C12806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-Assignment" */;
+			buildPhases = (
+				4A07A2932806978400C66CA6 /* Sources */,
+				4A07A2942806978400C66CA6 /* Frameworks */,
+				4A07A2952806978400C66CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Virtusa-IOS-Developer-Assignment";
+			productName = "Virtusa-IOS-Developer-Assignment";
+			productReference = 4A07A2972806978400C66CA6 /* Virtusa-IOS-Developer-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A07A2AC2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A07A2C42806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-AssignmentTests" */;
+			buildPhases = (
+				4A07A2A92806978700C66CA6 /* Sources */,
+				4A07A2AA2806978700C66CA6 /* Frameworks */,
+				4A07A2AB2806978700C66CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A07A2AF2806978700C66CA6 /* PBXTargetDependency */,
+			);
+			name = "Virtusa-IOS-Developer-AssignmentTests";
+			productName = "Virtusa-IOS-Developer-AssignmentTests";
+			productReference = 4A07A2AD2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A07A2B72806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A07A2C72806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-AssignmentUITests" */;
+			buildPhases = (
+				4A07A2B42806978700C66CA6 /* Sources */,
+				4A07A2B52806978700C66CA6 /* Frameworks */,
+				4A07A2B62806978700C66CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A07A2BA2806978700C66CA6 /* PBXTargetDependency */,
+			);
+			name = "Virtusa-IOS-Developer-AssignmentUITests";
+			productName = "Virtusa-IOS-Developer-AssignmentUITests";
+			productReference = 4A07A2B82806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A07A28F2806978400C66CA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4A07A2962806978400C66CA6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4A07A2AC2806978700C66CA6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4A07A2962806978400C66CA6;
+					};
+					4A07A2B72806978700C66CA6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4A07A2962806978400C66CA6;
+					};
+				};
+			};
+			buildConfigurationList = 4A07A2922806978400C66CA6 /* Build configuration list for PBXProject "Virtusa-IOS-Developer-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A07A28E2806978400C66CA6;
+			productRefGroup = 4A07A2982806978400C66CA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A07A2962806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */,
+				4A07A2AC2806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentTests */,
+				4A07A2B72806978700C66CA6 /* Virtusa-IOS-Developer-AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A07A2952806978400C66CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A07A2FE2806B03000C66CA6 /* Settings.bundle in Resources */,
+				4A07A2A72806978600C66CA6 /* LaunchScreen.storyboard in Resources */,
+				4A07A2A42806978600C66CA6 /* Assets.xcassets in Resources */,
+				4A07A2A22806978400C66CA6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2AB2806978700C66CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2B62806978700C66CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A07A2932806978400C66CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */,
+				4A07A2ED2806A00100C66CA6 /* AuthError.swift in Sources */,
+				4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */,
+				4A07A29F2806978400C66CA6 /* PeopleViewController.swift in Sources */,
+				4AE47D8D2807FBA20042B4AA /* NeworkManager.swift in Sources */,
+				4A07A3092806BBA200C66CA6 /* Room.swift in Sources */,
+				4A07A3042806B2C600C66CA6 /* People.swift in Sources */,
+				4AE47D922807FCD10042B4AA /* APICommunicator.swift in Sources */,
+				4A07A2D828069A3300C66CA6 /* Router.swift in Sources */,
+				4AB4081928184A2300B7B0F5 /* PeopleTableViewCell.swift in Sources */,
+				4A1821EF280C93D200C37134 /* HTTPMethod.swift in Sources */,
+				4AB4082728186D2800B7B0F5 /* TableViewReusableProtocol.swift in Sources */,
+				4A0F6CFF280701E20059445E /* RoomsViewController.swift in Sources */,
+				4A07A3132806C30900C66CA6 /* Observer.swift in Sources */,
+				4A07A29B2806978400C66CA6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2A92806978700C66CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A07A2B22806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A07A2B42806978700C66CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A07A2BD2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A07A2AF2806978700C66CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A07A2962806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */;
+			targetProxy = 4A07A2AE2806978700C66CA6 /* PBXContainerItemProxy */;
+		};
+		4A07A2BA2806978700C66CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A07A2962806978400C66CA6 /* Virtusa-IOS-Developer-Assignment */;
+			targetProxy = 4A07A2B92806978700C66CA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A07A2A02806978400C66CA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A07A2A12806978400C66CA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A07A2A52806978600C66CA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A07A2A62806978600C66CA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A07A2BF2806978700C66CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A07A2C02806978700C66CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A07A2C22806978700C66CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A07A2C32806978700C66CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A07A2C52806978700C66CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Virtusa-IOS-Developer-Assignment.app/Virtusa-IOS-Developer-Assignment";
+			};
+			name = Debug;
+		};
+		4A07A2C62806978700C66CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Virtusa-IOS-Developer-Assignment.app/Virtusa-IOS-Developer-Assignment";
+			};
+			name = Release;
+		};
+		4A07A2C82806978700C66CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Virtusa-IOS-Developer-Assignment";
+			};
+			name = Debug;
+		};
+		4A07A2C92806978700C66CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K558Y5NQS;
+				INFOPLIST_FILE = "Virtusa-IOS-Developer-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sachindaingade.Virtusa-IOS-Developer-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Virtusa-IOS-Developer-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A07A2922806978400C66CA6 /* Build configuration list for PBXProject "Virtusa-IOS-Developer-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A07A2BF2806978700C66CA6 /* Debug */,
+				4A07A2C02806978700C66CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A07A2C12806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A07A2C22806978700C66CA6 /* Debug */,
+				4A07A2C32806978700C66CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A07A2C42806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A07A2C52806978700C66CA6 /* Debug */,
+				4A07A2C62806978700C66CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A07A2C72806978700C66CA6 /* Build configuration list for PBXNativeTarget "Virtusa-IOS-Developer-AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A07A2C82806978700C66CA6 /* Debug */,
+				4A07A2C92806978700C66CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A07A28F2806978400C66CA6 /* Project object */;
+}
