@@ -23,15 +23,15 @@ public final class NeworkManager {
         }
     }
     
-//    public class func getAllRooms() {
-//        APICommunicator.communicateWithPeopleAPI(Router.rooms.urlRequest!) { result in
-//            switch result {
-//            case .failure(let error):
-//                print("\(error)")
-//            case .success(let rooms):
-//                print("\(rooms)")
-//            }
-//        }
-//    }
+     class func getAllRooms(_ complition:@escaping (Result<[Room],AuthenticationError>) -> Void) {
+        APICommunicator.communicateWithRommsAPI(Router.rooms.asURLRequest()!) { result in
+            switch result {
+            case .failure(let error):
+                complition(.failure(error))
+            case .success(let rooms):
+                complition(.success(rooms))
+            }
+        }
+    }
 }
 

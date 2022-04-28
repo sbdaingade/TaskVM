@@ -12,24 +12,29 @@ class PeopleViewController: UIViewController {
     private let cache = NSCache<AnyObject, UIImage>()
     private let utilityQueue = DispatchQueue.global(qos: .utility)
     
-
     @IBOutlet weak var peopleTableView: UITableView!
     private var arrayOfPeople = [Person?]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        peopleViewModel.input.action.value = .getPeoples
+        if peopleViewModel.output.arrayOfPeople.value?.count == 0 {
+            peopleViewModel.input.action.value = .getPeoples
+        }
         peopleViewModel.output.arrayOfPeople.next {[unowned self] persons in
             arrayOfPeople = persons ?? []
             DispatchQueue.main.async {
                 self.peopleTableView.reloadData()
             }
         }
-      
+        
     }
 }
 extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         arrayOfPeople.count
@@ -52,10 +57,12 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let person = arrayOfPeople[indexPath.row] {
+            let roomViewController = RoomsViewController.makeViewController(withRoomID: person.id, roomViewModel: peopleViewModel)
+            self.navigationController?.pushViewController(roomViewController, animated: true)
+        }
     }
-    
     
     // MARK: - Image Loading
     private func loadImage(_ strUrl: String, completion: @escaping (UIImage?) -> ()) {

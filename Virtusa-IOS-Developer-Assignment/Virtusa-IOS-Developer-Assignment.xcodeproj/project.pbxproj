@@ -23,6 +23,8 @@
 		4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */; };
 		4A0F6CFF280701E20059445E /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F6CFE280701E20059445E /* RoomsViewController.swift */; };
 		4A1821EF280C93D200C37134 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1821EE280C93D200C37134 /* HTTPMethod.swift */; };
+		4A236FC8281A97D500088D51 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A236FC7281A97D500088D51 /* RoomTableViewCell.swift */; };
+		4A236FCD281AAADE00088D51 /* Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A236FCC281AAADD00088D51 /* Extesions.swift */; };
 		4AB4081928184A2300B7B0F5 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */; };
 		4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */; };
 		4AB4082728186D2800B7B0F5 /* TableViewReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */; };
@@ -70,6 +72,8 @@
 		4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		4A0F6CFE280701E20059445E /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		4A1821EE280C93D200C37134 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4A236FC7281A97D500088D51 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		4A236FCC281AAADD00088D51 /* Extesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extesions.swift; sourceTree = "<group>"; };
 		4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReusableProtocol.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */,
+				4A236FC7281A97D500088D51 /* RoomTableViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */,
+				4A236FCC281AAADD00088D51 /* Extesions.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -364,6 +370,8 @@
 			files = (
 				4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */,
 				4A07A2ED2806A00100C66CA6 /* AuthError.swift in Sources */,
+				4A236FCD281AAADE00088D51 /* Extesions.swift in Sources */,
+				4A236FC8281A97D500088D51 /* RoomTableViewCell.swift in Sources */,
 				4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */,
 				4A07A29F2806978400C66CA6 /* PeopleViewController.swift in Sources */,
 				4AE47D8D2807FBA20042B4AA /* NeworkManager.swift in Sources */,

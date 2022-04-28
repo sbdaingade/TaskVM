@@ -20,6 +20,7 @@ class PeopleViewModel {
     
     public struct Output {
         public let arrayOfPeople = Observer(value: [Person]())
+        public let arrayOfRooms = Observer(value: [Room]())
     }
     
     public let input = Input()
@@ -37,17 +38,14 @@ class PeopleViewModel {
             case .none:
                 break
             }
-           
-            }
-
         }
+    }
     
     private func getAllPeoples()  {
-        print(" Function called")
         NeworkManager.getAllPeoples {[unowned self] result in
             switch result {
             case .failure(let error):
-               print(error)
+                print(error)
             case .success(let persons):
                 output.arrayOfPeople.value = persons
             }
@@ -55,6 +53,13 @@ class PeopleViewModel {
     }
     
     private func getAllRooms()  {
-        
+        NeworkManager.getAllRooms {[unowned self] result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let rooms):
+                output.arrayOfRooms.value = rooms
+            }
+        }
     }
 }
