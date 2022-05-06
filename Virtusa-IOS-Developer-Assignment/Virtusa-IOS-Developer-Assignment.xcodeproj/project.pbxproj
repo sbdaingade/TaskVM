@@ -15,19 +15,20 @@
 		4A07A2B22806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2B12806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentTests.swift */; };
 		4A07A2BD2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2BC2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift */; };
 		4A07A2D828069A3300C66CA6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2D728069A3300C66CA6 /* Router.swift */; };
-		4A07A2ED2806A00100C66CA6 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A2EC2806A00100C66CA6 /* AuthError.swift */; };
 		4A07A2FE2806B03000C66CA6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A07A2F12806A74900C66CA6 /* Settings.bundle */; };
 		4A07A3042806B2C600C66CA6 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3032806B2C600C66CA6 /* People.swift */; };
 		4A07A3092806BBA200C66CA6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3082806BBA200C66CA6 /* Room.swift */; };
 		4A07A3132806C30900C66CA6 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3122806C30900C66CA6 /* Observer.swift */; };
 		4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */; };
 		4A0F6CFF280701E20059445E /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F6CFE280701E20059445E /* RoomsViewController.swift */; };
+		4A146327282521F3006F2EF4 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A146326282521F3006F2EF4 /* CustomActivityIndicator.swift */; };
 		4A1821EF280C93D200C37134 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1821EE280C93D200C37134 /* HTTPMethod.swift */; };
 		4A236FC8281A97D500088D51 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A236FC7281A97D500088D51 /* RoomTableViewCell.swift */; };
 		4A236FCD281AAADE00088D51 /* Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A236FCC281AAADD00088D51 /* Extesions.swift */; };
 		4AB4081928184A2300B7B0F5 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */; };
 		4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */; };
 		4AB4082728186D2800B7B0F5 /* TableViewReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */; };
+		4ADBAB3A281BE6CD007DBAAE /* APIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADBAB39281BE6CC007DBAAE /* APIState.swift */; };
 		4AE47D8D2807FBA20042B4AA /* NeworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE47D8C2807FBA20042B4AA /* NeworkManager.swift */; };
 		4AE47D922807FCD10042B4AA /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE47D912807FCD10042B4AA /* APICommunicator.swift */; };
 /* End PBXBuildFile section */
@@ -64,19 +65,20 @@
 		4A07A2BC2806978700C66CA6 /* Virtusa_IOS_Developer_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtusa_IOS_Developer_AssignmentUITests.swift; sourceTree = "<group>"; };
 		4A07A2BE2806978700C66CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A07A2D728069A3300C66CA6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		4A07A2EC2806A00100C66CA6 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		4A07A2F12806A74900C66CA6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4A07A3032806B2C600C66CA6 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		4A07A3082806BBA200C66CA6 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		4A07A3122806C30900C66CA6 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		4A07A3172806C4C200C66CA6 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		4A0F6CFE280701E20059445E /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		4A146326282521F3006F2EF4 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 		4A1821EE280C93D200C37134 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		4A236FC7281A97D500088D51 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
 		4A236FCC281AAADD00088D51 /* Extesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extesions.swift; sourceTree = "<group>"; };
 		4AB4081828184A2300B7B0F5 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4AB4082028184D7B00B7B0F5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReusableProtocol.swift; sourceTree = "<group>"; };
+		4ADBAB39281BE6CC007DBAAE /* APIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIState.swift; sourceTree = "<group>"; };
 		4AE47D8C2807FBA20042B4AA /* NeworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeworkManager.swift; sourceTree = "<group>"; };
 		4AE47D912807FCD10042B4AA /* APICommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +133,6 @@
 			children = (
 				4AB4082528186CFA00B7B0F5 /* Extesions */,
 				4AB40817281849E300B7B0F5 /* CustomCell */,
-				4A07A2EB28069FE700C66CA6 /* ErrorHandler */,
 				4AE47D8B2807FB890042B4AA /* Network */,
 				4A07A2F12806A74900C66CA6 /* Settings.bundle */,
 				4A07A3112806C2EE00C66CA6 /* Observer */,
@@ -176,14 +177,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		4A07A2EB28069FE700C66CA6 /* ErrorHandler */ = {
-			isa = PBXGroup;
-			children = (
-				4A07A2EC2806A00100C66CA6 /* AuthError.swift */,
-			);
-			path = ErrorHandler;
-			sourceTree = "<group>";
-		};
 		4A07A3022806B28A00C66CA6 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +217,8 @@
 			children = (
 				4AB4082628186D2800B7B0F5 /* TableViewReusableProtocol.swift */,
 				4A236FCC281AAADD00088D51 /* Extesions.swift */,
+				4ADBAB39281BE6CC007DBAAE /* APIState.swift */,
+				4A146326282521F3006F2EF4 /* CustomActivityIndicator.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -368,8 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADBAB3A281BE6CD007DBAAE /* APIState.swift in Sources */,
 				4AB4082128184D7B00B7B0F5 /* ImageLoader.swift in Sources */,
-				4A07A2ED2806A00100C66CA6 /* AuthError.swift in Sources */,
 				4A236FCD281AAADE00088D51 /* Extesions.swift in Sources */,
 				4A236FC8281A97D500088D51 /* RoomTableViewCell.swift in Sources */,
 				4A07A3182806C4C200C66CA6 /* PeopleViewModel.swift in Sources */,
@@ -384,6 +379,7 @@
 				4AB4082728186D2800B7B0F5 /* TableViewReusableProtocol.swift in Sources */,
 				4A0F6CFF280701E20059445E /* RoomsViewController.swift in Sources */,
 				4A07A3132806C30900C66CA6 /* Observer.swift in Sources */,
+				4A146327282521F3006F2EF4 /* CustomActivityIndicator.swift in Sources */,
 				4A07A29B2806978400C66CA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

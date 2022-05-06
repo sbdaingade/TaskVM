@@ -21,6 +21,7 @@ class PeopleViewModel {
     public struct Output {
         public let arrayOfPeople = Observer(value: [Person]())
         public let arrayOfRooms = Observer(value: [Room]())
+        public let requestState  = Observer(value: APIState.idle)
     }
     
     public let input = Input()
@@ -42,24 +43,29 @@ class PeopleViewModel {
     }
     
     private func getAllPeoples()  {
+        output.requestState.value = .progress
         NeworkManager.getAllPeoples {[unowned self] result in
             switch result {
             case .failure(let error):
-                print(error)
+                output.requestState.value = .failWithError(error)
             case .success(let persons):
                 output.arrayOfPeople.value = persons
             }
+            output.requestState.value = .finished
         }
     }
     
     private func getAllRooms()  {
+        output.requestState.value = .progress
         NeworkManager.getAllRooms {[unowned self] result in
             switch result {
             case .failure(let error):
-                print(error)
+                output.requestState.value = .failWithError(error)
             case .success(let rooms):
                 output.arrayOfRooms.value = rooms
             }
+            output.requestState.value = .finished
+
         }
     }
 }

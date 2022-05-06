@@ -9,7 +9,7 @@ import Foundation
 
 public final class NeworkManager {
     
-    class func getAllPeoples(_ complition:@escaping (Result<[Person],AuthenticationError>) -> Void) {
+    class func getAllPeoples(_ complition:@escaping (Result<[Person],Error>) -> Void) {
         
         APICommunicator.communicateWithPeopleAPI(Router.people.asURLRequest()!) { result in
             switch result {
@@ -23,7 +23,7 @@ public final class NeworkManager {
         }
     }
     
-     class func getAllRooms(_ complition:@escaping (Result<[Room],AuthenticationError>) -> Void) {
+     class func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void) {
         APICommunicator.communicateWithRommsAPI(Router.rooms.asURLRequest()!) { result in
             switch result {
             case .failure(let error):

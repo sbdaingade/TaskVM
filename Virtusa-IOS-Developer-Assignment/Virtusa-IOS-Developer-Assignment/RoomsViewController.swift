@@ -40,7 +40,7 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
             fatalError("can't initiate")
         }
         roomsViewController.title = "Room"
-
+        
         roomsViewController.input.action.next {[unowned roomViewModel] action in
             switch action {
             case .getRooms:
@@ -53,14 +53,11 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         roomViewModel.output.arrayOfRooms.next { [unowned roomsViewController] rooms in
-           // print("\(rooms)")
             roomsViewController.output.arrayOfRooms.value = rooms
             DispatchQueue.main.async {
                 roomsViewController.roomTableView.reloadData()
             }
         }
-        
-        
         return roomsViewController
     }
     
@@ -78,5 +75,11 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
             cell.configureCell(withRoom: room)
         }
         return cell
+    }
+    
+    private func commonAlerView(_ title: String ,newMessage: String) {
+        let alert = UIAlertController(title: title, message: newMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.navigationController?.present(alert, animated: true, completion: nil)
     }
 }
