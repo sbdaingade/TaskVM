@@ -48,9 +48,7 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
             switch action {
             case .getPeople:
                 peopleViewModel.input.action.value = .getPeoples
-            case .never:
-                break
-            case .none:
+            case .never,.none:
                 break
             }
         }
@@ -63,7 +61,8 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return peopleViewController
     }
-    
+    // MARK: - TableView
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80.0
     }

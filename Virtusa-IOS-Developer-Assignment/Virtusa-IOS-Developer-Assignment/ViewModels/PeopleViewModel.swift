@@ -34,9 +34,7 @@ class PeopleViewModel {
                 self.getAllPeoples()
             case .getRooms:
                 self.getAllRooms()
-            case .never:
-                print("Initialized called")
-            case .none:
+            case .never,.none:
                 break
             }
         }

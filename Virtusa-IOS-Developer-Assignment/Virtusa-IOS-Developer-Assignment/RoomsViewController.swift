@@ -45,9 +45,7 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
             switch action {
             case .getRooms:
                 roomViewModel.input.action.value = .getRooms
-            case .never:
-                break
-            case .none:
+            case .never,.none:
                 break
             }
         }
@@ -60,6 +58,8 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return roomsViewController
     }
+    
+    // MARK: - TableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120.0
@@ -75,11 +75,5 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
             cell.configureCell(withRoom: room)
         }
         return cell
-    }
-    
-    private func commonAlerView(_ title: String ,newMessage: String) {
-        let alert = UIAlertController(title: title, message: newMessage, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.navigationController?.present(alert, animated: true, completion: nil)
     }
 }
