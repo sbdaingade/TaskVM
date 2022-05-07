@@ -6,22 +6,31 @@
 //
 
 import Foundation
-
+// sepearate
 // MARK: - Person
 struct Person: Codable {
-    let createdAt, firstName: String
+    let createdAt: String
+    let firstName: String
     let avatar: String
-    let lastName, email, jobtitle, favouriteColor: String
+    let lastName: String
+    let email: String
+    let jobtitle: String
+    let favouriteColor: String
     let id: String
     let data: AdditionalData?
-    let to, fromName: String?
+    let to: String?
+    let fromName: String?
 }
 
 // MARK: - DataClass
 struct AdditionalData: Codable {
-    let title, body, id, toID: String
-    let fromID, meetingid: String
-
+    let title: String
+    let body: String
+    let id: String
+    let toID: String
+    let fromID: String
+    let meetingid: String
+    
     enum CodingKeys: String, CodingKey {
         case title, body, id
         case toID = "toId"

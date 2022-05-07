@@ -63,7 +63,6 @@ class PeopleViewModel {
                 output.arrayOfRooms.value = rooms
             }
             output.requestState.value = .finished
-
         }
     }
 }

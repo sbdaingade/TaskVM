@@ -10,28 +10,26 @@ import Foundation
 public final class NeworkManager {
     
     class func getAllPeoples(_ complition:@escaping (Result<[Person],Error>) -> Void) {
-        
-        APICommunicator.communicateWithPeopleAPI(Router.people.asURLRequest()!) { result in
+        APICommunicator.communicateWithAPI(Router.people.asURLRequest()!, model: Person.self) { result in
             switch result {
             case .failure(let error):
                 //  print("\(error)")
                 complition(.failure(error))
             case .success(let persons):
                 // print("\(persons)")
-                complition(.success(persons))
+                complition(.success(persons ?? []))
             }
         }
     }
     
-     class func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void) {
-        APICommunicator.communicateWithRommsAPI(Router.rooms.asURLRequest()!) { result in
+    class func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void) {
+        APICommunicator.communicateWithAPI(Router.rooms.asURLRequest()!, model: Room.self) { result in
             switch result {
             case .failure(let error):
                 complition(.failure(error))
             case .success(let rooms):
-                complition(.success(rooms))
+                complition(.success(rooms ?? []))
             }
         }
     }
 }
-

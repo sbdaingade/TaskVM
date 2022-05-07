@@ -4,6 +4,7 @@
 //
 //  Created by Sachin Daingade on 06/05/22.
 //
+// comment
 
 import Foundation
 import UIKit
@@ -13,7 +14,6 @@ class MRActivityIndicator: UIView {
     private convenience init() {
         self.init(frame: UIScreen.main.bounds)
     }
-    
 
     private var spinnerBehavior: UIDynamicItemBehavior?
     private var animator: UIDynamicAnimator?
@@ -36,10 +36,6 @@ class MRActivityIndicator: UIView {
         DispatchQueue.main.async {[weak self] in
             self?.stopAnimation()
         }
-    }
-    
-    private func custInit() {
-       
     }
     
     private func setupView() {

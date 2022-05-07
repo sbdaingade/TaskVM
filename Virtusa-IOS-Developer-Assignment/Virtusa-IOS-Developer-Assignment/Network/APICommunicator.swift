@@ -8,43 +8,21 @@
 import Foundation
 
 public struct APICommunicator {
-    
-    static func communicateWithPeopleAPI(_ request: URLRequest, complition:@escaping (Result<[Person],Error>) -> Void){
-      
+    static func communicateWithAPI<T:Codable>(_ request: URLRequest, model: T.Type , complition:@escaping (Result<[T]?,Error>) -> Void) {
         URLSession.shared.dataTask(with: request) { data, response, error in
-            if error != nil {
-                complition(.failure(error!))
+            if let error = error {
+                complition(.failure(error))
             }
-            
             guard let data = data else {
-                return complition(.failure(error!))
+                let error = NSError.init(domain: "No record found", code: 404, userInfo: ["Empty": "No record found"])
+                return complition(.failure(error))
             }
             do {
-                let persons = try JSONDecoder().decode([Person].self, from: data)
-                complition(.success(persons))
+                let responseModel = try JSONDecoder().decode([T].self, from: data)
+                complition(.success(responseModel))
             } catch(let error) {
                 complition(.failure(error))
             }
         }.resume()
     }
-    
-    static func communicateWithRommsAPI(_ request: URLRequest, complition:@escaping (Result<[Room],Error>) -> Void){
-      
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if error != nil {
-                complition(.failure(error!))
-            }
-            
-            guard let data = data else {
-                return   complition(.failure(error!))
-            }
-            do {
-                let rooms = try JSONDecoder().decode([Room].self, from: data)
-                complition(.success(rooms))
-            } catch(let error) {
-                complition(.failure(error))
-            }
-        }.resume()
-    }
-
 }

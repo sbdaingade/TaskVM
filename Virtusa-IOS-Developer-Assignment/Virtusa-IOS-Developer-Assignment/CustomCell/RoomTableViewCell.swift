@@ -14,15 +14,11 @@ class RoomTableViewCell: UITableViewCell,TableViewReusableProtocol {
         // Initialization code
         clipsToBounds = true
         self.layer.shadowColor = UIColor.black.cgColor
-        roundCorners(corners: .bottomLeft, radius: 30)
-        roomStatusColorView.clipsToBounds = true
-        roomStatusColorView.roundCorners(corners: .bottomLeft, radius: 25)
     }
 
     @IBOutlet weak var roomID: UILabel!
     @IBOutlet weak var roomStatus: UILabel!
     @IBOutlet weak var maxCapacity: UILabel!
-    @IBOutlet weak var roomStatusColorView: UIView!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -35,11 +31,11 @@ class RoomTableViewCell: UITableViewCell,TableViewReusableProtocol {
         maxCapacity.text = "Max Capacity :  \(room.maxOccupancy)"
 
         if room.isOccupied {
-            roomStatus.text = " Room is not available"
-            roomStatusColorView.backgroundColor = .red
+            roomStatus.text = "Room is not available"
+            roomStatus.textColor = .red
         } else {
-            roomStatus.text = " Room is available"
-            roomStatusColorView.backgroundColor = .green
+            roomStatus.text = "Room is available"
+            roomStatus.textColor = .blue
         }
     }
 }

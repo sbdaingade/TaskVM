@@ -8,12 +8,10 @@
 import UIKit
 
 class PeopleViewController: UIViewController {
-    private let cache = NSCache<AnyObject, UIImage>()
-    private let utilityQueue = DispatchQueue.global(qos: .utility)
-    private weak var vm: PeopleViewModel?
+ 
+    private weak var peopleViewModel: PeopleViewModel?
     
     @IBOutlet weak var peopleTableView: UITableView!
-    //  private var arrayOfPeople = [Person?]()
     
     public struct Input {
         public enum InputAction {
@@ -42,7 +40,7 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
             fatalError("can't initiate")
         }
         peopleViewController.title = "People"
-        peopleViewController.vm = peopleViewModel
+        peopleViewController.peopleViewModel = peopleViewModel
         
         peopleViewController.input.action.next {[unowned peopleViewModel] action in
             switch action {
@@ -75,35 +73,14 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(indexPath: indexPath, cellType: PeopleTableViewCell.self)
         if let person = output.arrayOfPeople.value?[indexPath.row] {
             cell.configureCell(withPerson: person)
-            
-            if let cachedImage = cache.object(forKey: person.id as AnyObject){
-                cell.peopleImageView.image = cachedImage
-            } else {
-                self.loadImage(person.avatar){ [weak self] image in
-                    guard let self = self, let image = image else { return }
-                    self.cache.setObject(image, forKey: person.id as AnyObject)
-                }
-            }
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let person = output.arrayOfPeople.value?[indexPath.row] {
-            let roomViewController = RoomsViewController.makeViewController(withRoomID: person.id, roomViewModel: vm! )
+            let roomViewController = RoomsViewController.makeViewController(withRoomID: person.id, roomViewModel: peopleViewModel! )
             self.navigationController?.pushViewController(roomViewController, animated: true)
-        }
-    }
-    
-    // MARK: - Image Loading
-    private func loadImage(_ strUrl: String, completion: @escaping (UIImage?) -> ()) {
-        utilityQueue.async {
-            let url = URL(string: strUrl)!
-            guard let data = try? Data(contentsOf: url) else { return }
-            let image = UIImage(data: data)
-            DispatchQueue.main.async {
-                completion(image)
-            }
         }
     }
 }

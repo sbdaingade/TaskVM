@@ -62,7 +62,7 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: - TableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120.0
+        return 80.0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
