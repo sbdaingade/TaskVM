@@ -35,10 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     MRActivityIndicator.shared.hide()
                 }
             case .failWithError(let error):
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [unowned self] in
                     let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    window?.rootViewController?.present(alert, animated: true, completion: nil)
+                    self.window?.rootViewController?.present(alert, animated: true, completion: nil)
                 }
             }
         }
