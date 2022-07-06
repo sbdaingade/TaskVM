@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        navigationController.navigationBar.tintColor = .cyan
         let peopleViewController = PeopleViewController.makeViewController(withPeopleViewModel: peopleViewModel)
         navigationController.viewControllers = [peopleViewController]
         self.window?.rootViewController = navigationController

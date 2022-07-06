@@ -7,9 +7,15 @@
 
 import Foundation
 
-public final class NeworkManager {
+protocol PeopleDataSource {
+    static func getAllPeoples(_ complition:@escaping (Result<[Person],Error>) -> Void)
+    static func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void)
+}
+
+
+public struct NeworkManager: PeopleDataSource {
     
-    class func getAllPeoples(_ complition:@escaping (Result<[Person],Error>) -> Void) {
+    static func getAllPeoples(_ complition:@escaping (Result<[Person],Error>) -> Void) {
         APICommunicator.communicateWithAPI(Router.people.asURLRequest()!, model: Person.self) { result in
             switch result {
             case .failure(let error):
@@ -22,7 +28,7 @@ public final class NeworkManager {
         }
     }
     
-    class func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void) {
+    static func getAllRooms(_ complition:@escaping (Result<[Room],Error>) -> Void) {
         APICommunicator.communicateWithAPI(Router.rooms.asURLRequest()!, model: Room.self) { result in
             switch result {
             case .failure(let error):
